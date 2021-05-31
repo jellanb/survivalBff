@@ -1,0 +1,21 @@
+[
+  {
+    "name": "account",
+    "type": "mssql",
+    "host": "207.244.244.220",
+    "port": 1433,
+    "connectionTimeout": 30000,
+    "requestTimeout": 30000,
+    "username": "sa",
+    "password": "FueraMaduro2021",
+    "database": "SRO_VT_ACCOUNT",
+    "synchronize": false,
+    "logging": false,
+    "migrations": [
+      "migration/**/*.ts"
+    ],
+    "entities": [
+      "./src/infraestructure/persistence/entities/mssql/omsGrocery/*.ts"
+    ]
+  }
+]
